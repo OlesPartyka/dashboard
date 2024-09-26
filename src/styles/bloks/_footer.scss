@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__img {
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+  }
+
+  &__text-name {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+  }
+
+  &__text-position {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    color: #757575;
+  }
+}

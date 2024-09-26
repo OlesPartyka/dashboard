@@ -1,3 +1,32 @@
-body {
+@import './bloks/sidebar';
+@import './bloks/header';
+@import './bloks/footer';
+@import './bloks/customers';
+@import './bloks/pagination';
+@import './bloks/table';
+
+*{
+  font-family: "Poppins", sans-serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  height: 100vh;
+  background-color: #EEEEEE;
+  display: flex;
+}
+
+main {
+  padding-top: 41px;
+  padding-left: 71px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 51px;
 }
