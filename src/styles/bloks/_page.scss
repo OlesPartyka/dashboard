@@ -1,0 +1,32 @@
+.page {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &__body {
+    background-color: $bg-white;
+  }
+
+  &__main {
+    margin-left: 377px;
+    padding-top: 41px;
+
+    @media (max-width: 970px) {
+      margin-left: 47px;
+      padding-top: 60px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 51px;
+
+    @media (max-width: 970px) {
+      margin: 0 auto;
+      margin-bottom: 51px;
+      text-align: center;
+    }
+  }
+}

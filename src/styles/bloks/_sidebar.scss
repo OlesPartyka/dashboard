@@ -1,13 +1,22 @@
 .sidebar {
-
-  height: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
   width: 309px;
-  background: #fff;
+  background: $main-white;
   padding: 36px 23px 76px 33px;
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 970px) {
+    width: 220px;
+  }
+
   &__menu {
+    padding: 0;
+    margin: 0;
     margin-top: 64px;
     display: flex;
     flex-direction: column;
@@ -22,14 +31,14 @@
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #5932EA;
+      background-color: $bg-violet;
 
       .sidebar__link {
-        color: #fff;
+        color: $main-white;
       }
 
       svg path {
-        stroke: #fff;
+        stroke: $main-white;
       }
     }
 
@@ -44,7 +53,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    color: #9197B3;
+    color: $text-grey;
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
@@ -52,10 +61,10 @@
     svg {
       transition: all 0.3s ease;
     }
+  }
 
-    span {
-      margin-left: 14px;
-    }
+  &__text {
+    margin-left: 14px;
   }
 
   &__item-arr {
@@ -64,6 +73,10 @@
 
   &__footer {
     margin-top: auto;
+
+    @media (max-width: 970px) {
+      margin-top: 40px;;
+    }
   }
 }
 

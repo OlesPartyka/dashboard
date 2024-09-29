@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <nav class="sidebar">
-      <header class="header__header">
+  <body class="page__body">
+    <nav class="sidebar close">
+      <header class="header">
         <div class="header__img-text">
 
           <span class="header__logo">
@@ -30,6 +30,21 @@
           </div>
 
         </div>
+
+        <svg
+          class="header__item-arr"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 12L10 8L6 4"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
       </header>
 
       <ul class="sidebar__menu">
@@ -75,7 +90,7 @@
               />
             </svg>
 
-            <span>
+            <span class="sidebar__text">
               Dashboard
             </span>
 
@@ -112,7 +127,7 @@
               <path d="M12.0002 18.7498C11.4202 18.7498 10.8503 18.6198 10.3903 18.3698L7.19025 16.5898C6.23025 16.0598 5.49023 14.7898 5.49023 13.6898V10.2998C5.49023 9.20981 6.24025 7.9398 7.19025 7.3998L10.3903 5.6198C11.3103 5.1098 12.6902 5.1098 13.6102 5.6198L16.8102 7.3998C17.7702 7.9298 18.5103 9.19981 18.5103 10.2998V13.6898C18.5103 14.7798 17.7602 16.0498 16.8102 16.5898L13.6102 18.3698C13.1502 18.6298 12.5802 18.7498 12.0002 18.7498ZM12.0002 6.7498C11.6702 6.7498 11.3502 6.8098 11.1202 6.9398L7.92026 8.7198C7.43026 8.9898 6.99023 9.7498 6.99023 10.2998V13.6898C6.99023 14.2498 7.43026 14.9998 7.92026 15.2698L11.1202 17.0498C11.5802 17.3098 12.4202 17.3098 12.8802 17.0498L16.0802 15.2698C16.5702 14.9998 17.0103 14.2398 17.0103 13.6898V10.2998C17.0103 9.73981 16.5702 8.9898 16.0802 8.7198L12.8802 6.9398C12.6502 6.8098 12.3302 6.7498 12.0002 6.7498Z" fill="#9197B3"/>
             </svg>
 
-            <span>
+            <span class="sidebar__text">
               Product
             </span>
 
@@ -157,7 +172,7 @@
               />
             </svg>
 
-            <span>
+            <span class="sidebar__text">
               Customers
             </span>
 
@@ -227,7 +242,7 @@
               />
             </svg>
 
-            <span>
+            <span class="sidebar__text">
               Income
             </span>
 
@@ -263,7 +278,7 @@
               <path d="M8.99945 15.7495C8.80945 15.7495 8.61945 15.6795 8.46945 15.5295C8.17945 15.2395 8.17945 14.7595 8.46945 14.4695L14.4695 8.46945C14.7595 8.17945 15.2395 8.17945 15.5295 8.46945C15.8195 8.75945 15.8195 9.23951 15.5295 9.52951L9.52945 15.5295C9.37945 15.6795 9.18945 15.7495 8.99945 15.7495Z" fill="#9197B3"/>
             </svg>
 
-            <span>
+            <span class="sidebar__text">
               Promote
             </span>
 
@@ -298,7 +313,7 @@
               <path d="M12 14.6001C11.58 14.6001 11.25 14.2601 11.25 13.8501C11.25 13.4401 11.59 13.1001 12 13.1001C12.41 13.1001 12.75 13.4401 12.75 13.8501C12.75 14.2601 12.42 14.6001 12 14.6001Z" fill="#9197B3"/>
             </svg>
 
-            <span>
+            <span class="sidebar__text">
               Help
             </span>
 
@@ -338,8 +353,8 @@
       </footer>
     </nav>
 
-    <main>
-      <h1 class="title">
+    <main class="page__main">
+      <h1 class="page__title">
         Hello Evano 👋🏼,
       </h1>
 
@@ -362,210 +377,212 @@
           </div>
         </div>
 
-        <div>
-          <table class="table">
-            <thead class="table__head">
-              <tr class="table__head-row">
-                <th class="table__head-item">
-                  Customer Name
-                </th>
-                <th class="table__head-item">
-                  Company
-                </th>
-                <th class="table__head-item">
-                  Phone Number
-                </th>
-                <th class="table__head-item">
-                  Email
-                </th>
-                <th class="table__head-item">
-                  Country
-                </th>
-                <th class="table__head-item">
-                  Status
-                </th>
-              </tr>
-            </thead>
-            <tbody class="table__body">
-              <tr class="table__body-row">
-                <td class="table__body-item">
-                  Jane Cooper
-                </td>
-                <td class="table__body-item">
-                  Microsoft
-                </td>
-                <td class="table__body-item">
-                  (225) 555-0118
-                </td>
-                <td class="table__body-item">
-                  jane@microsoft.com
-                </td>
-                <td class="table__body-item">
-                  United States
-                </td>
-                <td class="table__body-item">
-                  <span class="table__item-status">
-                    Active
-                  </span>
-                </td>
-              </tr>
-              <tr class="table__body-row">
-                <td class="table__body-item">
-                  Floyd Miles
-                </td>
-                <td class="table__body-item">
-                  Yahoo
-                </td>
-                <td class="table__body-item">
-                  (205) 555-0100
-                </td>
-                <td class="table__body-item">
-                  floyd@yahoo.com
-                </td>
-                <td class="table__body-item">
-                  Kiribati
-                </td>
-                <td class="table__body-item">
-                  <span class="table__item-status table__item-status--inactive">
-                    Inactive
-                  </span>
-                </td>
-              </tr>
-              <tr class="table__body-row">
-                <td class="table__body-item">
-                  Ronald Richards
-                </td>
-                <td class="table__body-item">
-                  Adobe
-                </td>
-                <td class="table__body-item">
-                  (302) 555-0107
-                </td>
-                <td class="table__body-item">
-                  ronald@adobe.com
-                </td>
-                <td class="table__body-item">
-                  Israel
-                </td>
-                <td class="table__body-item">
-                  <span class="table__item-status table__item-status--inactive">
-                    Inactive
-                  </span>
-                </td>
-              </tr>
-              <tr class="table__body-row">
-                <td class="table__body-item">
-                  Marvin McKinney
-                </td>
-                <td class="table__body-item">
-                  Tesla
-                </td>
-                <td class="table__body-item">
-                  (252) 555-0126
-                </td>
-                <td class="table__body-item">
-                  marvin@tesla.com
-                </td>
-                <td class="table__body-item">
-                  Iran
-                </td>
-                <td class="table__body-item">
-                  <span class="table__item-status">
-                    Active
-                  </span>
-                </td>
-              </tr>
-              <tr class="table__body-row">
-                <td class="table__body-item">
-                  Jerome Bell
-                </td>
-                <td class="table__body-item">
-                  Google
-                </td>
-                <td class="table__body-item">
-                  (629) 555-0129
-                </td>
-                <td class="table__body-item">
-                  jerome@google.com
-                </td>
-                <td class="table__body-item">
-                  Réunion
-                </td>
-                <td class="table__body-item">
-                  <span class="table__item-status">
-                    Active
-                  </span>
-                </td>
-              </tr>
-              <tr class="table__body-row">
-                <td class="table__body-item">
-                  Kathryn Murphy
-                </td>
-                <td class="table__body-item">
-                  Microsoft
-                </td>
-                <td class="table__body-item">
-                  (406) 555-0120
-                </td>
-                <td class="table__body-item">
-                  kathryn@microsoft.com
-                </td>
-                <td class="table__body-item">
-                  Curaçao
-                </td>
-                <td class="table__body-item">
-                  <span class="table__item-status">
-                    Active
-                  </span>
-                </td>
-              </tr>
-              <tr class="table__body-row">
-                <td class="table__body-item">
-                  Jacob Jones
-                </td>
-                <td class="table__body-item">
-                  Yahoo
-                </td>
-                <td class="table__body-item">
-                  (208) 555-0112
-                </td>
-                <td class="table__body-item">
-                  jacob@yahoo.com
-                </td>
-                <td class="table__body-item">
-                  Brazil
-                </td>
-                <td class="table__body-item">
-                  <span class="table__item-status">
-                    Active
-                  </span>
-                </td>
-              </tr>
-              <tr class="table__body-row">
-                <td class="table__body-item">
-                  Kristin Watson
-                </td>
-                <td class="table__body-item">
-                  Facebook
-                </td>
-                <td class="table__body-item">
-                  (704) 555-0127
-                </td>
-                <td class="table__body-item">
-                  kristin@facebook.com
-                </td>
-                <td class="table__body-item">
-                  Åland Islands
-                </td>
-                <td class="table__body-item">
-                  <span class="table__item-status table__item-status--inactive">
-                    Inactive
-                  </span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
+
+        <table class="table">
+          <thead class="table__head">
+            <tr class="table__head-row">
+              <th class="table__head-item">
+                Customer Name
+              </th>
+              <th class="table__head-item">
+                Company
+              </th>
+              <th class="table__head-item">
+                Phone Number
+              </th>
+              <th class="table__head-item">
+                Email
+              </th>
+              <th class="table__head-item">
+                Country
+              </th>
+              <th class="table__head-item">
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__body-row">
+              <td class="table__body-item">
+                Jane Cooper
+              </td>
+              <td class="table__body-item">
+                Microsoft
+              </td>
+              <td class="table__body-item">
+                (225) 555-0118
+              </td>
+              <td class="table__body-item">
+                jane@microsoft.com
+              </td>
+              <td class="table__body-item">
+                United States
+              </td>
+              <td class="table__body-item">
+                <span class="table__item-status">
+                  Active
+                </span>
+              </td>
+            </tr>
+            <tr class="table__body-row">
+              <td class="table__body-item">
+                Floyd Miles
+              </td>
+              <td class="table__body-item">
+                Yahoo
+              </td>
+              <td class="table__body-item">
+                (205) 555-0100
+              </td>
+              <td class="table__body-item">
+                floyd@yahoo.com
+              </td>
+              <td class="table__body-item">
+                Kiribati
+              </td>
+              <td class="table__body-item">
+                <span class="table__item-status table__item-status--inactive">
+                  Inactive
+                </span>
+              </td>
+            </tr>
+            <tr class="table__body-row">
+              <td class="table__body-item">
+                Ronald Richards
+              </td>
+              <td class="table__body-item">
+                Adobe
+              </td>
+              <td class="table__body-item">
+                (302) 555-0107
+              </td>
+              <td class="table__body-item">
+                ronald@adobe.com
+              </td>
+              <td class="table__body-item">
+                Israel
+              </td>
+              <td class="table__body-item">
+                <span class="table__item-status table__item-status--inactive">
+                  Inactive
+                </span>
+              </td>
+            </tr>
+            <tr class="table__body-row">
+              <td class="table__body-item">
+                Marvin McKinney
+              </td>
+              <td class="table__body-item">
+                Tesla
+              </td>
+              <td class="table__body-item">
+                (252) 555-0126
+              </td>
+              <td class="table__body-item">
+                marvin@tesla.com
+              </td>
+              <td class="table__body-item">
+                Iran
+              </td>
+              <td class="table__body-item">
+                <span class="table__item-status">
+                  Active
+                </span>
+              </td>
+            </tr>
+            <tr class="table__body-row">
+              <td class="table__body-item">
+                Jerome Bell
+              </td>
+              <td class="table__body-item">
+                Google
+              </td>
+              <td class="table__body-item">
+                (629) 555-0129
+              </td>
+              <td class="table__body-item">
+                jerome@google.com
+              </td>
+              <td class="table__body-item">
+                Réunion
+              </td>
+              <td class="table__body-item">
+                <span class="table__item-status">
+                  Active
+                </span>
+              </td>
+            </tr>
+            <tr class="table__body-row">
+              <td class="table__body-item">
+                Kathryn Murphy
+              </td>
+              <td class="table__body-item">
+                Microsoft
+              </td>
+              <td class="table__body-item">
+                (406) 555-0120
+              </td>
+              <td class="table__body-item">
+                kathryn@microsoft.com
+              </td>
+              <td class="table__body-item">
+                Curaçao
+              </td>
+              <td class="table__body-item">
+                <span class="table__item-status">
+                  Active
+                </span>
+              </td>
+            </tr>
+            <tr class="table__body-row">
+              <td class="table__body-item">
+                Jacob Jones
+              </td>
+              <td class="table__body-item">
+                Yahoo
+              </td>
+              <td class="table__body-item">
+                (208) 555-0112
+              </td>
+              <td class="table__body-item">
+                jacob@yahoo.com
+              </td>
+              <td class="table__body-item">
+                Brazil
+              </td>
+              <td class="table__body-item">
+                <span class="table__item-status">
+                  Active
+                </span>
+              </td>
+            </tr>
+            <tr class="table__body-row">
+              <td class="table__body-item">
+                Kristin Watson
+              </td>
+              <td class="table__body-item">
+                Facebook
+              </td>
+              <td class="table__body-item">
+                (704) 555-0127
+              </td>
+              <td class="table__body-item">
+                kristin@facebook.com
+              </td>
+              <td class="table__body-item">
+                Åland Islands
+              </td>
+              <td class="table__body-item">
+                <span class="table__item-status table__item-status--inactive">
+                  Inactive
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
 
         <div class="customers__footer">
           <span class="customers__entries">
