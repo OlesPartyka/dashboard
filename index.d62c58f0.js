@@ -1,0 +1,2 @@
+var e=document.querySelector("body"),t=e.querySelector(".sidebar"),n=e.querySelector(".header__item-arr");function d(){t&&(window.innerWidth<=970?t.classList.add("close"):t.classList.remove("close"))}document.addEventListener("DOMContentLoaded",function(){d(),window.addEventListener("resize",d)}),n.addEventListener("click",function(){t.classList.toggle("close")});
+//# sourceMappingURL=index.d62c58f0.js.map
